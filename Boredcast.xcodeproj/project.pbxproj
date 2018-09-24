@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894E0E1A2A46C0435F0CD728 /* Pods_Boredcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC96549793E7275AF7BC4F4F /* Pods_Boredcast.framework */; };
+		C25AA8DF215929B600FDD580 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25AA8DE215929B600FDD580 /* Constants.swift */; };
 		C2C039472156C8AE00CD0768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C039462156C8AE00CD0768 /* AppDelegate.swift */; };
 		C2C039492156C8AE00CD0768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C039482156C8AE00CD0768 /* ViewController.swift */; };
 		C2C0394C2156C8AE00CD0768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C0394A2156C8AE00CD0768 /* Main.storyboard */; };
 		C2C0394E2156C8B400CD0768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C0394D2156C8B400CD0768 /* Assets.xcassets */; };
 		C2C039512156C8B400CD0768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C0394F2156C8B400CD0768 /* LaunchScreen.storyboard */; };
+		C2D4B47C2158D07B009478CE /* MessengerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4B47B2158D07B009478CE /* MessengerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6740AE0C06B33E03B72460BD /* Pods-Boredcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boredcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boredcast/Pods-Boredcast.debug.xcconfig"; sourceTree = "<group>"; };
+		C25AA8DE215929B600FDD580 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C2C039432156C8AE00CD0768 /* Boredcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boredcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C039462156C8AE00CD0768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2C039482156C8AE00CD0768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		C2C0394D2156C8B400CD0768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2C039502156C8B400CD0768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2C039522156C8B400CD0768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D4B47B2158D07B009478CE /* MessengerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerVC.swift; sourceTree = "<group>"; };
+		F90266F487E9AF95141E37A1 /* Pods-Boredcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boredcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boredcast/Pods-Boredcast.release.xcconfig"; sourceTree = "<group>"; };
+		FC96549793E7275AF7BC4F4F /* Pods_Boredcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boredcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894E0E1A2A46C0435F0CD728 /* Pods_Boredcast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F7AC2AC6C1A3AA5C61300BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC96549793E7275AF7BC4F4F /* Pods_Boredcast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AEC823860AD4C375799CE85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6740AE0C06B33E03B72460BD /* Pods-Boredcast.debug.xcconfig */,
+				F90266F487E9AF95141E37A1 /* Pods-Boredcast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2C0393A2156C8AE00CD0768 = {
 			isa = PBXGroup;
 			children = (
 				C2C039452156C8AE00CD0768 /* Boredcast */,
 				C2C039442156C8AE00CD0768 /* Products */,
+				5AEC823860AD4C375799CE85 /* Pods */,
+				2F7AC2AC6C1A3AA5C61300BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				C2C0394D2156C8B400CD0768 /* Assets.xcassets */,
 				C2C0394F2156C8B400CD0768 /* LaunchScreen.storyboard */,
 				C2C039522156C8B400CD0768 /* Info.plist */,
+				C2D4B47B2158D07B009478CE /* MessengerVC.swift */,
+				C25AA8DE215929B600FDD580 /* Constants.swift */,
 			);
 			path = Boredcast;
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2C039552156C8B400CD0768 /* Build configuration list for PBXNativeTarget "Boredcast" */;
 			buildPhases = (
+				544ACEC9C5787612494E65A4 /* [CP] Check Pods Manifest.lock */,
 				C2C0393F2156C8AE00CD0768 /* Sources */,
 				C2C039402156C8AE00CD0768 /* Frameworks */,
 				C2C039412156C8AE00CD0768 /* Resources */,
+				88CAE30DE7739372166581CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +162,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		544ACEC9C5787612494E65A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boredcast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CAE30DE7739372166581CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Boredcast/Pods-Boredcast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boredcast/Pods-Boredcast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2C0393F2156C8AE00CD0768 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +208,8 @@
 			files = (
 				C2C039492156C8AE00CD0768 /* ViewController.swift in Sources */,
 				C2C039472156C8AE00CD0768 /* AppDelegate.swift in Sources */,
+				C2D4B47C2158D07B009478CE /* MessengerVC.swift in Sources */,
+				C25AA8DF215929B600FDD580 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +351,7 @@
 		};
 		C2C039562156C8B400CD0768 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6740AE0C06B33E03B72460BD /* Pods-Boredcast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +369,7 @@
 		};
 		C2C039572156C8B400CD0768 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90266F487E9AF95141E37A1 /* Pods-Boredcast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

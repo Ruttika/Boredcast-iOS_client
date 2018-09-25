@@ -40,6 +40,7 @@ class ViewController: UIViewController {
             let MessengerVC = self.storyboard?.instantiateViewController(withIdentifier: "MessengerVC") as! MessengerVC
             self.present(MessengerVC, animated: true)
             
+            
         }
     }
     
@@ -75,12 +76,39 @@ class ViewController: UIViewController {
         myActivityIndicator.startAnimating()
         self.view.addSubview(myActivityIndicator)
         
-        Alamofire.request(BASEURL, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request(BASEURL, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
             print(response)
+            
+            if let dict = response.result.value as? Dictionary<String, AnyObject> {
+                print("fos")
+                if let loginOK = dict["valami"] as? String {
+                    
+                    if loginOK == "false" {
+                        
+                        self.displayMessage(userMessage: "Wrong Username or Password!")
+                        
+                        self.removeActivityIndcator(activityIndicator: myActivityIndicator)
+                        completed()
+                        return
+                        
+                    }
+                }
+            }
+            
+            
+        }
+        self.removeActivityIndcator(activityIndicator: myActivityIndicator)
+        completed()
+    }
+    
+    func removeActivityIndcator(activityIndicator: UIActivityIndicatorView) {
+        
+        DispatchQueue.main.async {
+            activityIndicator.stopAnimating()
+            activityIndicator.removeFromSuperview()
             
         }
         
-        completed()
     }
     
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 
-let BASEURL = "headers.jsontest.com"
+let BASEURL = "https://jsonplaceholder.typicode.com/posts/1"
+//let BASEURL2 = "kaka"
 
 typealias downloadCompleted = () -> ()
